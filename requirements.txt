@@ -1,0 +1,2 @@
+Python 3.7+ required
+All functionality uses the standard library, so no additional packages are needed
