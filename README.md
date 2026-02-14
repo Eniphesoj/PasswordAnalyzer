@@ -6,6 +6,8 @@ A Python-based cybersecurity tool for analyzing password strength, detecting com
 - **Complexity Analysis** - Checks for uppercase, lowercase, digits, special characters
 - **Pattern Detection** - Identifies repeated characters, sequences, keyboard walks
 - **Common Password Detection** - Checks against list of frequently used passwords
+- **Breach Detection** - Uses HIBP API to check if password appears in 12+ billion breached paaswords
+- **Password Generator** - Creates cryptographically secure random passwords
 - **Detailed Reporting** - Provides actionable security recommendations
 
 ## Installation
@@ -14,12 +16,11 @@ git clone https://github.com/Eniphesoj/PasswordAnalyzer.git
 cd PasswordAnalyzer
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python password_analyzer.py
 ```
 
 ## Usage
-```bash
-python password_analyzer.py
-```
 
 Enter passwords when prompted to see detailed analysis.
 
